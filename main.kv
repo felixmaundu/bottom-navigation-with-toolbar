@@ -1,0 +1,57 @@
+Screen:
+    BoxLayout:
+        orientation:'vertical'
+        MDTopAppBar:
+            title: 'Twitter'
+            left_action_items:[["menu",lambda x: app.navigation_draw()]]
+            right_action_items:[["image-filter-center-focus-weak",lambda x: app.navigation_draw()]]
+            elevation:20
+        MDLabel:
+            text: 'hey there'
+            align: 'center'
+
+        MDBottomNavigation:
+            MDBottomNavigationItem:
+                name: "home"
+
+                icon:"home"
+                MDLabel:
+                    font_style: "Body1"
+                    text: "Toggle to set custom panel color"
+                    align: "center"
+
+            MDBottomNavigationItem:
+                name: "search"
+
+                icon:"card-search"
+                MDLabel:
+                    font_style: "Body1"
+                    text: "Toggle to set custom panel color"
+                    align: "center"
+
+            MDBottomNavigationItem:
+                name: "post"
+
+                icon:"plus"
+                MDLabel:
+                    font_style: "Body1"
+                    text: "Toggle to set custom panel color"
+                    align: "center"
+            MDBottomNavigationItem:
+                name: "notification"
+
+                icon:"bell-outline"
+                MDLabel:
+                    font_style: "Body1"
+                    text: "Toggle to set custom panel color"
+                    align: "center"
+            MDBottomNavigationItem:
+                name: "Message"
+
+                icon:"email"
+                MDLabel:
+                    font_style: "Body1"
+                    text: "Toggle to set custom panel color"
+                    align: "center"
+
+
